@@ -39,3 +39,10 @@ spec:
             secretKeyRef:
               name: postgresql
               key: database-user
+
+      spec:
+        template:
+          spec:
+            containers:
+            - image: build-image
+              name: accounts              
